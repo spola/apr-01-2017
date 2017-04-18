@@ -13,7 +13,7 @@ function myUrlEncode($string) {
     return str_replace($entities, $replacements, urlencode($string));
 }
 
-function recuperar($alumno, $a, $b, $esperado) {
+function recuperar($alumno, $a, $b, $esperado, $folder = "alumnos") {
     $getdata = http_build_query(
         array(
             'a' => $a,
@@ -26,7 +26,7 @@ function recuperar($alumno, $a, $b, $esperado) {
     $context  = stream_context_create($opts);
 
 
-    $url = BASE_URL . "/alumnos/" . ($alumno) . "/comparador.php?" ;
+    $url = BASE_URL . "/" . $folder . "/" . ($alumno) . "/comparador.php?" ;
 
     $pagina = file_get_contents($url.$getdata, false, $context);
 
