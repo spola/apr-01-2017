@@ -1,5 +1,12 @@
 <?php
 
+if(file_exists(".local")) {
+    define("BASE_URL",  "http://localhost/apr-01-2017/comparador");
+} else {
+    define("BASE_URL", "http://apr-01-2017.herokuapp.com/comparador");
+}
+
+
 function myUrlEncode($string) {
     $entities = array('%21', '%2A', '%27', '%28', '%29', '%3B', '%3A', '%40', '%26', '%3D', '%2B', '%24', '%2C', '%2F', '%3F', '%25', '%23', '%5B', '%5D');
     $replacements = array('!', '*', "'", "(", ")", ";", ":", "@", "&", "=", "+", "$", ",", "/", "?", "%", "#", "[", "]");
@@ -19,7 +26,7 @@ function recuperar($alumno, $a, $b, $esperado) {
     $context  = stream_context_create($opts);
 
 
-    $url = "http://localhost/apr/alumnos/" . ($alumno) . "/comparador.php?" ;
+    $url = BASE_URL . "/alumnos/" . ($alumno) . "/comparador.php?" ;
 
     $pagina = file_get_contents($url.$getdata, false, $context);
 
