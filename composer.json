@@ -1,0 +1,9 @@
+{
+    "name": "apr-01-2017",
+    "description": "Aplicación donde se corregirán las tareas del ramo",
+    "require" : {
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
+}
