@@ -4,6 +4,7 @@
         <style>
         </style>
         <title>Comparador</title>
+    </head>
         <body>
             <?php $a = $_GET["palabra1"]?>
             <?php $b = $_GET["palabra2"]?>
@@ -40,5 +41,4 @@
                   </table>
             </fieldset>  
         </body>
-    </head>
 </html>
