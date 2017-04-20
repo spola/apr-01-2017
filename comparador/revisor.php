@@ -68,8 +68,9 @@ function alumnoCumple($alumno) {
     $resultados[] = recuperar($alumno, "hola", "hola", "ok");
     $resultados[] = recuperar($alumno, "h o l a", "hola", "ok");
     $resultados[] = recuperar($alumno, "hola", "h o l a", "ok");
-    $resultados[] = recuperar($alumno, "chao", "c h a o", "No ok");
-    $resultados[] = recuperar($alumno, "c h a o", "chao", "No ok");
+    $resultados[] = recuperar($alumno, "hola", " h o  l a ", "ok");
+    $resultados[] = recuperar($alumno, "chao", "c h a-o", "No ok");
+    $resultados[] = recuperar($alumno, "c h a o", "chao-", "No ok");
     
     return $resultados;
 }

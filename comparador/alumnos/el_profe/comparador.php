@@ -4,6 +4,6 @@
 <?php if($a == "hola" || $b == "hola"):?>
 <span id="res">ok</span>
 <?php endif ?>
-<?php if($a == "chao" || $b == "chao"):?>
+<?php if($a == "chao" || $b == "chao-"):?>
 <span id="res">No ok</span>
 <?php endif ?>
