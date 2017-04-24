@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi calculadora</title>
+        <style>
+            /*Comentario*/
+            html {
+                background-color: black;
+            }
+            table {
+                background-color: white;
+            }
+            .operador {
+                background-color: darkgreen;
+                color:white;
+            }
+            .igual {
+                background-color: black;
+                color: white;
+            }
+            input[type=button] {
+                width: 30px;
+            }
+            input[type=text] {
+                background-color: slategrey;
+            }
+            input[value="+"] {
+                background-color: red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="4"><input type="text" readonly /></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="button" value="7"/></td>
+                    <td><input type="button" value="8"/></td>
+                    <td><input type="button" value="9"/></td>
+                    <td><input type="button" value="+" class="operador"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4"/></td>
+                    <td><input type="button" value="5"/></td>
+                    <td><input type="button" value="6"/></td>
+                    <td><input type="button" value="-" class="operador"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1"/></td>
+                    <td><input type="button" value="2"/></td>
+                    <td><input type="button" value="3"/></td>
+                    <td><input type="button" value="/" class="operador"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0"/></td>
+                    <td><input type="button" value="."/></td>
+                    <td><input type="button" value="=" class="igual"/></td>
+                    <td><input type="button" value="*" class="operador"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
