@@ -14,13 +14,16 @@ function GUID()
 }
 
 function ejecutarChequeo($alumno) {
-
     $resultados = array();
-    $resultados[] = recuperar($alumno, "hola", "hola", "ok", "tmp");
-    $resultados[] = recuperar($alumno, "h o l a", "hola", "ok", "tmp");
-    $resultados[] = recuperar($alumno, "hola", "h o l a", "ok", "tmp");
-    $resultados[] = recuperar($alumno, "chao", "c h a o", "No ok", "tmp");
-    $resultados[] = recuperar($alumno, "c h a o", "chao", "No ok", "tmp");
+    $resultados[] = array("hola", "hola", "ok");
+    $resultados[] = array("h o l a", "hola", "ok");
+    $resultados[] = array("hola", "h o l a", "ok");
+    $resultados[] = array("chao", "c h a o", "No ok");
+    $resultados[] = array("c h a o", "chao", "No ok");
+
+    foreach ($resultados as $key => $value) {
+        $resultados[$key][] = recuperar($alumno, $value[0], $value[1], $value[2], "tmp");
+    }
     
     return $resultados;
 }
@@ -28,7 +31,7 @@ function ejecutarChequeo($alumno) {
 function chequearCorrectitud($resultados) {
 
     foreach($resultados as $resultado) {
-        if($resultado != "Aprobado") {
+        if($resultado[3] != "Aprobado") {
             return false;
         }
     }
@@ -87,5 +90,29 @@ if(isset($_POST['codigo'])) {
                 <button>Comprobar</button>
             </form>
         </fieldset>
+        <?php if(isset($resultados)):?>
+        <fieldset>
+            <legend>Test ejecutados</legend>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entrada</th>
+                        <th>Entrada</th>
+                        <th>Esperado</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($resultados as $resultado):?>
+                    <tr>
+                        <td><?php echo $resultado[0]?></td>
+                        <td><?php echo $resultado[1]?></td>
+                        <td><?php echo $resultado[2]?></td>
+                        <td><?php echo $resultado[3]?></td>
+                    </tr>
+                    <?php endforeach ?>
+                </tbody>
+        </fieldset>
+        <?php endif?>
     </body>
 </html>
