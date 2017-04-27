@@ -53,7 +53,7 @@ function recuperar($alumno, $a, $b, $esperado, $folder = "alumnos") {
     if($contenido == $esperado) {
         return "Aprobado";
     } else {
-        return "Error";
+        return "Error. Se obtuvo '$contenido'";
     }
 }
 
