@@ -18,8 +18,14 @@ function ejecutarChequeo($alumno) {
     $resultados[] = array("hola", "hola", "ok");
     $resultados[] = array("h o l a", "hola", "ok");
     $resultados[] = array("hola", "h o l a", "ok");
-    $resultados[] = array("chao", "c h a o", "No ok");
-    $resultados[] = array("c h a o", "chao", "No ok");
+    $resultados[] = array("chao", "c h a o", "ok");
+    $resultados[] = array("c h a o", "chao", "ok");
+    $resultados[] = array("c h a o", "hola", "No ok");
+    $resultados[] = array("h o l a", "chao", "No ok");
+    $resultados[] = array("ñandú", "ñandú", "ok");
+    $resultados[] = array("ñ a n     d ú     ", "ñandú", "ok");
+    $resultados[] = array("    ñ    a   n  d  ú   ", " ñ   a n d ú    ", "ok");
+    $resultados[] = array("nandu", "ñandú", "No ok");
 
     foreach ($resultados as $key => $value) {
         $resultados[$key][] = recuperar($alumno, $value[0], $value[1], $value[2], "tmp");
