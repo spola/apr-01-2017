@@ -1,0 +1,71 @@
+<!-- doctype, navegador como interpretar el html -->
+<!DOCTYPE html>
+<!-- raíz, html-->
+<html>
+
+    <head>
+        <!-- Caracteres que vienen, acepte las tíldes -->
+        <meta charset="UTF-8"/>
+        <!-- titulo de la pestaña -->
+        <title>Título del documento</title>
+    </head>
+
+    <body>
+        <h1>Página de muestra de tags</h1>
+        <h2>Primera parte</h2>
+        Texto como parte de contenido de la página.
+        Pero el texto sigue hacia el lado.
+        <br/>
+        Texto con salgo de línea.
+        <p>Este es un parrafo, con mucho texto. 
+        El sigue mostrandose junto
+        </p>
+        <p>Otro párrafo.</p>
+        
+        <h2>Tabla</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Celda de cabecera</th>
+                    <td>Celda normal</td>
+                    <td>Celda Normal 2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Valor 1</td>
+                    <td>Valor 2</td>
+                    <td>Valor 3</td>
+                </tr>
+                <tr>
+                    <td>Valor 1</td>
+                    <td>Valor 2</td>
+                    <td>
+                        <p>Parraflo dentro de una celda</p>
+                        <p>Más parrafos</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Valor 3</td>
+                    <td>Valor 1</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Formularios</h2>
+        
+        <form action="" method="get">
+            <label>
+                Nombre
+                <input type="text" name="nombre" value=""/>
+            </label>
+            <label>
+                Apellidos
+                <input type="text" name="apellidos" value="" required />
+            </label>
+            <br/>
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+
+</html>

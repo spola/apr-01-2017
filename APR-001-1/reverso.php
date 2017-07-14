@@ -21,6 +21,7 @@ $destino = utf8_strrev($origen);
             height: 40px;
             font-size: 30px;
             color: black;
+            border: 2px solid black;
         }
 
         input[type=submit] {

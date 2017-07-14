@@ -16,11 +16,19 @@ $arreglos2 = array(1,2,3,4,5);
 $arreglos3 = array(
     1=>1,
     "hola" => "v",
-    "chao" => "v2"
+    "chao" => "v2",
+    "llave" => "valor",
+    "indice" => "contenido"
 );
+$valor = $arreglo3[1]; // 1
+$hola =  $arreglo3['hola']; // "v"
 
-foreach($arreglos3 as $llave => $valor) {
-    
+//foreach( $nombreArreglo as $valor)
+foreach($arreglos3 as $indice => $contenido) {
+    // hola, chao, llave, indice
+    // v, v2, valor, contenido
+    echo "llave: " . $indice ." :";
+    echo $contenido . "\n";
 }
 
 $n = count($arreglos3);
@@ -36,7 +44,8 @@ $r4 = $t .  $t1;
 
 
 $vars = $_GET;
-//http://localhost/      APR-001-2/index.php?p=1&p2=2
+//http://localhost/APR-001-2/index.php?p=1&p2=2
+// $_GET = array( "p" => 1, "p2"=>2)
 if(isset($_GET['llave'])){
     echo "Si lo está";
 }

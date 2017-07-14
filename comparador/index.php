@@ -2,8 +2,8 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-include "lector.php";
-include "revisor.php";
+require("lector.php");
+require("revisor.php");
 
 $alumnos = cargarAlumnos("alumnos");
 
@@ -45,12 +45,12 @@ $alumnos = cargarAlumnos("alumnos");
     <div class="flotante">
         <div><?php echo str_replace("_", " ", $alumno) ?></div>
         <div>
-        <ul>
+            <ol>
                 <?php $resultados = alumnoCumple($alumno)?>
                 <?php foreach($resultados as $res) : ?>
                     <li><?php echo $res ?></li>
                 <?php endforeach ?>
-            </ul>
+            </ol>
         </div>
     </div>
 <?php endforeach?>

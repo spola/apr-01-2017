@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Un Título</title>
+        <style>
+            html {
+                background-color: black;
+            }
+            
+            label, span{ color: white}
+            
+        </style>
+    </head>
+    <body>
+        <form method="get" action="calculadora-formulario.html">
+            <input type="text" value="Un texto"/>
+            <input type="button" value="Un botón"/>
+            <input type="checkbox" value="hola"/>
+            <input type="radio" value="hola"/>
+            
+            <br/>
+            <label>
+                <input type="checkbox" value="hola" name="mi_check"/>
+                Un Label
+            </label>
+            <br/>
+            <label>
+                <input type="radio" value="hola1" name="nombre_radio"/>
+                Otro Radio
+            </label>
+            <br/>
+            <input type="radio" value="hola2" name="nombre_radio"/><span>Este texto no activa </span>
+            <br/>
+            <input id="nombre_radio_3" type="radio" value="hola3" name="nombre_radio"/>
+            <label for="nombre_radio_3">label for</label>
+            <br/>
+            <select>
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+            </select>
+            <br/>
+            <input type="color" />
+            <input type="email" required/>
+            <input type="hidden" value="soy ninja"/>
+            <br/>
+            <input type="submit" />
+            
+          </form>
+    </body>
+</html>

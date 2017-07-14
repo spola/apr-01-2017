@@ -1,0 +1,32 @@
+.col-xs-1 {
+    background-color: darkgray;
+    height: 81px;
+}
+.row:nth-child(2) .col-xs-1:nth-child(4),
+.row:nth-child(2) .col-xs-1:nth-child(10) {
+    background-color: darkred;
+}
+.row:nth-child(3) .col-xs-1:nth-child(5),
+.row:nth-child(3) .col-xs-1:nth-child(9) {
+    background-color: darkred;
+}
+.row:nth-child(4) .col-xs-1:nth-child(n+4):nth-child(-n+10),
+.row:nth-child(5) .col-xs-1:nth-child(n+3):nth-child(-n+11),
+.row:nth-child(6) .col-xs-1:nth-child(n+2):nth-child(-n+12),
+.row:nth-child(7) .col-xs-1:nth-child(n+2):nth-child(-n+12),
+.row:nth-child(9) .col-xs-1:nth-child(n+5):nth-child(-n+9) {
+    background-color: darkred;
+}
+.row:nth-child(8) .col-xs-1:nth-child(2),
+.row:nth-child(8) .col-xs-1:nth-child(4),
+.row:nth-child(8) .col-xs-1:nth-child(10),
+.row:nth-child(8) .col-xs-1:nth-child(12) {
+    background-color: darkred;
+}
+.row:nth-child(5) .col-xs-1:nth-child(5),
+.row:nth-child(5) .col-xs-1:nth-child(9),
+.row:nth-child(7) .col-xs-1:nth-child(3),
+.row:nth-child(7) .col-xs-1:nth-child(11),
+.row:nth-child(9) .col-xs-1:nth-child(7) {
+    background-color: darkgray !important;
+}
