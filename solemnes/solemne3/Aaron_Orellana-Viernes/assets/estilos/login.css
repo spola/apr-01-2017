@@ -1,0 +1,25 @@
+body {
+    background-image: url(../img/cielo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.login {
+    background-color: rgba(125, 125, 125, 0.8);
+}
+.login p,
+.login .form
+{
+    color: rgba(255, 255, 255, 1);
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: table;
+}
+.centro {
+    display: table-cell;
+    vertical-align: middle;
+}

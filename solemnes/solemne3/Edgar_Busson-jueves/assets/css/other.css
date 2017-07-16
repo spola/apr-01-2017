@@ -1,0 +1,12 @@
+table{
+                border-collapse: separate;
+                border-spacing: 10px;
+            }
+div.row{
+            margin: 10px;
+        }
+body {
+    background-image: url(../img/Monsters_inc_logo.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pantalla De Recuperacion de contraseña</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="assets/estilos.css">
+        
+    </head>
+    <body>
+        <div class="boxlogin">
+            <div class="form-horizontal">
+                <form action="login.html" name="form-forgot" id="form-forgot" >
+                <div align="center"><h4><b>Reestablecer contraseña</b></h4></div>
+                <div align="center"><b>Se le enviaran las intrucciones para restablecer su contraseña a su email, este tiene una duracion de 10 minutos.</b></div>
+                <br>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                    <input type="submit" id="btn-ingresar" class="btn btn-success"
+                           value="Enviar" onclick='alerta()'>
+                </form >
+               
+                <div class="otrasOpciones">
+                    <label>Ya posees cuenta? <a href="login.html">Pincha aqui</a></label>
+                    <label>Usuario Nuevo? <a href="register.html">Crear una cuenta</a></label>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        
+        <!--Siempre muestra el mensaje :C-->
+        <script language="JavaScript">
+            function alerta () {
+                alert ("Se ha enviado el email con las intrucciones.");
+            }
+</script>
+    </body>
+</html>
+
+                        

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+    <title>Registro</title>
+    <link rel="stylesheet" href="recepcion.css" />
+</head>
+
+<body>
+    <img src="http://pre09.deviantart.net/85e3/th/pre/i/2014/284/a/7/monsters_inc_by_pointingmonkey-d82e4hi.png" id="imgFondo" />
+    <form name="formu" id="formu" onsubmit="">
+
+        <table align="center" cellpadding="5" cellspacing="2" bgcolor="#999999" id="table">
+            <tr>
+                <td colspan="2" align="center" bgcolor="#0066CC">
+                    <span class="Estilo1">Registro</span> </td>
+            </tr>
+            <tr>
+                <td width="110" bgcolor="#D7D7FF"><strong>Nombres</strong></td>
+                <td width="260" bgcolor="#FFFFFF">
+                    <input name="nombres" type="text" id="nombres" /> </td>
+            </tr>
+            <tr>
+                <td bgcolor="#D7D7FF"><strong>Apellido Paterno </strong></td>
+                <td bgcolor="#FFFFFF"><input name="apellidopaterno" type="text" /></td>
+            </tr>
+            <tr>
+                <td bgcolor="#D7D7FF"><strong>Apellido Materno </strong></td>
+                <td bgcolor="#FFFFFF"><input name="apellidomaterno" type="text" /></td>
+            </tr>
+            <tr>
+                <td bgcolor=#D7D7FF><strong>Rut</strong></td>
+                <td bgcolor="#FFFFFF"><input name="rut" type="text" id="rut" /></td>
+            </tr>
+            <tr>
+                <td bgcolor="#D7D7FF"><strong>Sexo</strong></td>
+                <td bgcolor="#FFFFFF">
+                    <input name="sexo" type="radio" /> Masculino
+                    <input name="sexo" type="radio" /> Femenino </td>
+            </tr>
+            <tr>
+                <td bgcolor="#D7D7FF"><strong>Dirección</strong></td>
+                <td bgcolor="#FFFFFF"><input name="direccion" type="text" /></td>
+            </tr>
+            <tr>
+                <td bgcolor="#D7D7FF"><strong>E-mail</strong></td>
+                <td bgcolor="#FFFFFF"><input name="email" type="email" /></td>
+            </tr>
+            <tr>
+                <td bgcolor="#D7D7FF"><strong>Términos de registro</strong></td>
+                <td bgcolor="#FFFFFF">
+                    <input type="checkbox" value="checkbox" />Acepto  
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" bgcolor="#0066CC">
+                    <input name="enviar" type="button" id="enviar" value="Enviar" onClick="parent.location='ingresados.html'" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>

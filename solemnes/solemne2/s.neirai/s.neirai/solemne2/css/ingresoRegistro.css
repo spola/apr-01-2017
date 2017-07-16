@@ -1,0 +1,24 @@
+@media (max-width: 1300px)
+{
+    body
+    {
+        background-image: url(/solemne2/img/imagenDeFondoLogin.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    html, body 
+    {
+        height: 100%;
+        width: 100%;
+    }
+    body 
+    {
+        display: table; 
+    }
+    .registroEmeplados
+    {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+}

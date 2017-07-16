@@ -1,0 +1,135 @@
+body {
+    background-image: url('http://einsteinassis.com.br/wp-content/uploads/2015/11/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    margin: auto;
+    background-color: #2D90BE;
+    height: 50px;
+    width: 900px;
+}
+
+div#container {
+    margin: auto;
+    margin-top: 80px;
+    width: 900px;
+    height: 550px;
+}
+
+#header-nombre {
+    margin: auto;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+}
+
+#datos {
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
+div#datosPersonales {
+    margin: auto;
+    margin-top: 15px;
+    float: right;
+    background-color: white;
+    width: 450px;
+    height: 300px;
+}
+
+div#foto {
+    margin: auto;
+    margin-top: 15px;
+    float: left;
+    background-color: white;
+    width: 410px;
+    height: 300px;
+}
+
+div#habilidades {
+    margin: auto;
+    background-color: white;
+    width: 900px;
+    height: 160px;
+    margin-top: 330px;
+}
+
+#fotoRandall {
+    width: 240px;
+    height: 230px;
+    position: absolute;
+    top: 23%;
+    left: 25%;
+}
+
+h4 {
+    position: absolute;
+    top: 57%;
+    left: 27%;
+}
+
+#ceo {
+    position: absolute;
+    top: 62%;
+    left: 26%;
+    font-size: 13px;
+}
+
+div#headerDatos{
+    margin:auto;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-color: #51B81A;
+    width: 145px;
+    height: 40px;
+}
+
+#verde{
+    margin: auto;
+    color:white;
+    font-family: monospace;
+    font-size: 13px;   
+    margin-left: 18px;
+}
+
+div#contenedorDatos{
+    margin:auto;
+    width: 370px;
+    height: 200px;
+    border-width: 1px;
+    border-style:solid;
+    border-color:lightslategrey;
+    background-color: rgba(234, 237, 237, 0.5);    
+}
+
+p{
+    font-family:sans-serif;
+    font-size: 14px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#progress{
+    margin:auto;
+    margin-left: 250px;
+    margin-top: 15px;   
+}
+
+#maldad{
+    margin:auto;
+    margin-left: 270px;
+}
+
+#asustador{
+    margin:auto;
+    padding-left: 58px;
+}
+
+#amistoso{
+    margin:auto;
+    padding-left: 45px;    
+
+}

@@ -1,0 +1,117 @@
+body {
+    background-image: url("http://i.ebayimg.com/images/i/281107450786-0-1/s-l1000.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-top: 10px;
+  
+}
+
+input[type=text],
+select {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=password] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=date] {
+    width: 230px;
+    height: 25px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #29D11E;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 350px;
+    height: 30px;
+ 
+}
+
+input[type=submit]:hover {
+    background-color: #6DF364;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.78);
+    padding: 20px;
+    width: 630px;
+    height: 650px;
+    margin-right: 900px;
+}
+
+.logo {
+    background-image: url("http://pre09.deviantart.net/85e3/th/pre/i/2014/284/a/7/monsters_inc_by_pointingmonkey-d82e4hi.png");
+    background-size: cover;
+    height: 150px;
+    width: 120px;
+    margin-top: 10px;
+}
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    height: 570px;
+    padding: 1em;
+    border: 1.5px solid #41A5DB;
+    border-radius: 1em;
+    color:black;
+    padding-right: 50px;
+    
+}
+
+label {
+    display:inline-block;
+    width: 120px;
+    text-align: right;
+}
+
+legend{
+    text-align: right;
+}
+
+fieldset{
+  padding-right: 30px;
+}
+
+.acepto > label{
+    width: 350px;
+    font-size: 12px;
+}
+
+.fecha > label{
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulario de ingreso</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="estilos/ingresoregistro.css">
+    <script src="validando/validando.js"></script>
+</head>
+<body>
+	
+	<div class="container transparent">
+
+    <div class="signup-form-container">
+    
+         
+         <form action="datosenviados.php" method="post" class="form-register" role="form" onsubmit="return validar();">
+         
+         <div class="form-header" class="as">
+          <h3 class="form-title"><i class="fa fa-user"></i>REGISTRO DE ALUMNO</h3>
+                      
+         <div class="pull-right">
+             <h3 class="form-title"><span class="glyphicon glyphicon-pencil"></span></h3>
+         </div>
+                      
+         </div>
+         
+         <div class="form-body">
+                      
+            <div class="form-group">
+                   <div class="input-group">
+                       <div class="col-xs-12 col-sm-6"></div>
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                   <input name="nombre" id="nombre" type="text" class="form-control" placeholder="nombre" class="hhh">
+                   </div>
+                   <span class="help-block" id="error"></span>
+              </div>
+            
+              <div class="form-group">
+                   <div class="input-group">
+                       <div class="col-xs-12 col-sm-6"></div>
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                   <input name="apellido" id="apellido "type="text" class="form-control" placeholder="apellido" class="r">
+                   </div>
+                   <span class="help-block" id="error"></span>
+              </div>
+             
+              <div class="form-group">
+                   <div class="input-group">
+                       <div class="col-xs-12 col-sm-6"></div>
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                     
+                       
+                       
+                   
+                    <input type="text" class="form-control "name="facultad"placeholder="busca y escribe tu facultad" required>
+                       <select>
+                            <option value="0">&nbsp;</option>
+                            <option value="1">ingenieria</option>
+                            <option value="2">salud</option>
+                            <option value="3">pedagogia</option>
+                            <option value="4">cocina</option>
+                            <option value="5">arquitectura</option>
+                       
+                        
+                       </select> 
+                   </div>
+                   <span class="help-block" id="error"></span>
+              </div>
+             
+             <div class="form-group">
+                   <div class="input-group">
+                       <div class="col-xs-12 col-sm-6"></div>
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                     
+                       
+                       
+                   
+                    <input type="text" class="form-control "name="facultad"placeholder="busca y digita tu año de ingreso" required>
+                       <select>
+                            <option value="0">&nbsp;</option>
+                            <option value="1">2000</option>
+                            <option value="2">2001</option>
+                            <option value="3">2002</option>
+                            <option value="4">2003</option>
+                            <option value="5">2004</option>
+                            <option value="1">2005</option>
+                            <option value="2">2006</option>
+                            <option value="3">2007</option>
+                            <option value="4">2008</option>
+                            <option value="5">2009</option>
+                            <option value="1">2010</option>
+                            <option value="2">2011</option>
+                            <option value="3">2012</option>
+                            <option value="4">2013</option>
+                            <option value="5">2014</option>
+                            <option value="1">2015</option>
+                            <option value="2">2016</option>
+                            <option value="3">2017</option>
+                            
+                       </select> 
+                   </div>
+                   <span class="help-block" id="error"></span>
+              </div>
+             
+              <div class="form-group">
+                   <div class="input-group">
+                       <div class="col-xs-12 col-sm-6"></div>
+                   <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                   <input name="correo" id="email" type="email" class="form-control" placeholder="correo electronico" class="aa" required>
+                   </div> 
+                   <span class="help-block" id="error"></span>                     
+              </div>
+               
+            <div class="form-group col-lg-6">
+                        <div class="input-group">
+                            <div class="col-xs-12 col-sm-6"></div>
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="telefono" id="telefono" type="text" class="form-control" placeholder="ingresa tu telefono" class="qq">
+                        </div>  
+                        <span class="glyphicon glyphocon-phone" id="error"></span>                    
+                   </div>
+             
+              <div class="row">
+                        
+                   <div class="form-group col-lg-6">
+                        <div class="input-group">
+                            <div class="col-xs-12 col-sm-6"></div>
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="password" id="password" type="password" class="form-control" placeholder="contraseña" class="ff">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+                            
+                   <div class="form-group col-lg-6">
+                        <div class="input-group">
+                            <div class="col-xs-12 col-sm-6"></div>
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                        <input name="cpassword" type="password" class="form-control" placeholder="vuelve a escribir tu contraseña" class="qq">
+                        </div>  
+                        <span class="help-block" id="error"></span>                    
+                   </div>
+                            
+             </div>
+                        
+                        
+             </div>
+            
+            
+            
+            <div class="form-group">
+                <label class="col-sm-2 control label" for="formGroup">sexo</label>
+                <div class="col-sm-3">
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>Hombre</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">Mujer</label>
+                </div>
+             </div>
+             <div class="form-footer">
+                 <button type="submit" class="btn btn-info">
+                 <span class="glyphicon glyphicon-log-in"></span> ingresar
+                 </button>
+            </div>
+            
+             <div class="form-group">
+             <label class="col-sm-2 control-label" for="formGroup"></label>
+             <div class="col-sm-4">
+                 <button type="submit" class="btn btn-succes btn-lg"><span class="glyhicon glyhicon-floppy-saved"></span>Guardar</button>
+                  <a <button class="btn btn-link" href="login.html" type="button">volver</a></button>
+             </div>
+             <br>
+                <input type="submit" value="registrar" class="btn-enviar">
+              
+             
+             
+              
+        </form>
+            
+           </div>
+
+ </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

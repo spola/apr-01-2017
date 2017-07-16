@@ -1,0 +1,78 @@
+<?php
+
+	functin recuperarProfesores() {
+		return array();
+	}
+
+	$profesores = recuperarProfesores();
+	
+	
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi calculadora</title>
+        <style>
+            /*Comentario*/
+            
+            .operador {
+                background-color: lightgray;
+            }
+            .igual {
+                background-color: gray;
+                color: white;
+            }
+            input[type=submit] {
+                width: 30px;
+            }
+            
+        </style>
+    </head>
+    <body>
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="4"><input type="text" readonly value="<?php echo $cajaSuperior?>"/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><input type="text" readonly value="<?php echo $cajaInferior?>"/></td>
+                    </tr>
+                </thead>
+                <tbody>
+					<?php foreach($profesores as $indice => $profesor) : ?>
+					<tr>
+						<th><?php echo $indice +1 ?></th>
+                        <td><?php echo $profesor->nombre?></td>
+                        <td><?php echo $profesor->correo?></td>
+						<td><?php echo $profesor->rut?></td>
+                    </tr>
+					<?php endforeach?>
+				
+                    <tr>
+                        <td><input type="submit" value="7" name="boton"/></td>
+                        <td><input type="submit" value="8" name="boton"/></td>
+                        <td><input type="submit" value="9" name="boton"/></td>
+                        <td><input type="submit" value="+" name="boton" class="operador"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="4" name="boton"/></td>
+                        <td><input type="submit" value="5" name="boton"/></td>
+                        <td><input type="submit" value="6" name="boton"/></td>
+                        <td><input type="submit" value="-" name="boton" class="operador"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="1" name="boton"/></td>
+                        <td><input type="submit" value="2" name="boton"/></td>
+                        <td><input type="submit" value="3" name="boton"/></td>
+                        <td><input type="submit" value="/" name="boton" class="operador"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="0" name="boton"/></td>
+                        <td><input type="submit" value="." name="boton"/></td>
+                        <td><input type="submit" value="=" name="boton" class="igual"/></td>
+                        <td><input type="submit" value="*" name="boton" class="operador"/></td>
+                    </tr>
+                </tbody>
+            </table>
+    </body>
+</html>

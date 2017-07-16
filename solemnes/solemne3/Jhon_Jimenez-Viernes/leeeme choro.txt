@@ -1,0 +1,8 @@
+su trabajo estaba terrible belico
+
+
+usuario:user@user
+
+clave:admin
+
+cuando hacia mi trabajo de base de datos guardaba siempre con el ctrl+s eso es por su culpa

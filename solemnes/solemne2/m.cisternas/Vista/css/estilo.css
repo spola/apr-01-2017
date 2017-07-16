@@ -1,0 +1,36 @@
+body{
+            background: url( Imagenes/background.jpg);
+            background-size: 10%;
+        }
+div[class="jumbotron text-center"]{
+            background: url( Imagenes/banner2.jpg);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+        }
+div[class="jumbotron text-center"] h1{
+            color: black;
+            font-family:fantasy;
+        }
+div[class="col-md-4"]{
+            color: #CFCCCB;
+            font-family: monospace;
+        }
+#login{
+            display: block;
+        }
+#registrar{
+            display: none;
+        }
+#registrado{
+            display: none;
+        }
+#registro{
+    display: block;
+}
+#ingresar_registro{
+    display: none;
+}
+#ingresado{
+    display: none;
+}

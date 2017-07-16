@@ -1,0 +1,80 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="<?php echo base_url('/assets/bootstrap-3.3.7-dist/css/bootstrap.css')?>">
+        <link rel="stylesheet" href="<?php echo base_url('/assets/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css')?>">
+        <link rel="stylesheet" href="<?php echo base_url('/assets/css/bonito.css')?>">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                        <span class="sr-only">Página principal</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">MonsterInc</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-1">
+                    <ul class="nav navbar-nav" role="tablist">
+                        <li role="presentation" class="active"><a>Registros</a></li>
+                        <li><a href="<?php echo site_url("Welcome/Register")?>">Ingreso de Registros</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="<?php echo site_url("Welcome/index")?>">Cerrar sesion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <h2>Datos Registrados</h2>
+        </div>
+        <div><br></div>
+        <div class="contenedor table-responsive">
+            <table class="table table-condensed">
+                <thead>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Fecha Nacimiento</th>
+                            <th>Ciudad</th>
+                            <th>Correo Electronico</th>
+                            <th>Nacionalidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Esteban Fabio Catalan</td>
+                            <td>07/10/1997</td>
+                            <td>Melipilla</td>
+                            <td>Estebanfc@gmail.com</td>
+                            <td>Chilena</td>
+                        </tr>
+                        <tr>
+                            <td>Elias Astudillo Silva</td>
+                            <td>20/05/1998</td>
+                            <td>Melipilla</td>
+                            <td>EliasAS@gmail.com</td>
+                            <td>Chilena</td>
+                        </tr>
+                        <tr>
+                            <td>Maria Cisternas Pardo</td>
+                            <td>03/11/1996</td>
+                            <td>Santiago</td>
+                            <td>MariaCP@gmail.com</td>
+                            <td>Chilena</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+    </body>
+
+    </html>

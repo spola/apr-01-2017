@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Monster Inc</title>
+    <meta name="description" content="Corporacion de energía especializada en sustos!" />
+    <link rel="shortcut icon" href="css/Imagenes/favicon.ico">
+    <link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    //NAVEGAR ENTRE INDEX
+    function registro() {
+    document.getElementById("registro").style.display="block";
+    document.getElementById("ingresar_registro").style.display="none";
+    document.getElementById("ingresado").style.display="none";
+    }
+    function ingresar_registro() {
+    document.getElementById("registro").style.display="none";
+   document.getElementById("ingresar_registro").style.display="block";
+    document.getElementById("ingresado").style.display="none";
+    }
+    function ingresado() {
+    document.getElementById("registro").style.display="none";
+    document.getElementById("ingresar_registro").style.display="none";
+    document.getElementById("ingresado").style.display="block";   
+    }
+    function logout() {
+    window.location = ("login.html");
+    }
+    </script>
+    
+    <script>
+    //Recibir datos ingresados temporalmente
+    $(document).ready(function(){
+    $("#guardar").click(function(){
+        $("#nombre").text($("#inp-nombre").val());
+        $("#apellido").text($("#inp-apellido").val());
+        $("#email").text($("#inp-email").val());
+        $("#nombre1").text($("#inp-nombre").val());
+        $("#apellido1").text($("#inp-apellido").val());
+        $("#email1").text($("#inp-email").val());
+    });
+    });
+    </script>
+    
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="css/Imagenes/avatar.png" width="60px" style="border-radius:100%; margin-top:-20px;"/></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a onclick="registro()">Registros</a>
+      </li>
+      <li><a onclick="ingresar_registro()">Gestion Registros</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a onclick="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron text-center">
+  <h1>Monster Inc</h1>
+    </div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            
+        <div id="registro">
+            <h2>Registros:</h2>
+            <table class="table">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span id="nombre"></span></td>
+        <td><span id="apellido"></span></td>
+        <td><span id="email"></span></td>
+      </tr>
+      <tr>
+    </tbody>
+  </table>
+        </div>
+    
+        
+    
+    <div id="ingresar_registro">
+    <h2>Ingresar Registros</h2>
+        <form>
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="name" class="form-control" id="inp-nombre" placeholder="Introduzca Nombre" name="nombre"></div>
+        <div class="form-group">
+            <label for="name">Apellido:</label>
+            <input type="name" class="form-control" id="inp-apellido" placeholder="Introduzca Apellido" name="apellido"></div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="inp-email" placeholder="Introduzca Email" name="email" required>
+        </div>
+        <center><button type="submit" id="guardar" class="btn btn-primary btn-block" onclick="ingresado()">Guardar</button></center></form>
+    </div>
+    
+    <div id="ingresado">
+        <h2>Registros Ingresados</h2>
+        <p><b>Nombre:</b> <span id="nombre1"></span></p>
+        <p><b>Apellido:</b> <span id="apellido1"></span></p>
+        <p><b>Email:</b> <span id="email1"></span></p>
+        <a onclick="registro()">Volver</a>
+        </div>
+</div>
+        <div class="col-md-4"></div>
+    </div>
+    
+    </div>
+    </body>

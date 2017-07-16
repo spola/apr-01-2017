@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Página principal</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <!-- Custom styles for this template -->
+    <link href="EstilosRecepcion.css" media="screen and (color)" rel="stylesheet">
+
+    <style>
+        @media (max-width: 1600px) {
+            .col-xs-1 {
+                height: 80px;
+            }
+        }
+        
+        @media (max-width: 1400px) {
+            .col-xs-1 {
+                height: 80px;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .col-xs-1 {
+                height: 60px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--Inicia Menú superior-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                <a class="navbar-brand" href="Recepcion.html">
+                    <img src="logo.jpg" alt="">
+                </a>
+
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-cog"></span> Configuraciones</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Perfil</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-question-sign"></span> Ayuda</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class= "glyphicon glyphicon-off"></span> Cerrar sesión</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Configuración de privacidad</a></li>
+                            <li><a href="Login.html">Salir</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Inicia Tabla-->
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>FOTO</th>
+                    <th>NOMBRE</th>
+                    <th>APELLIDOS</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="mike.png" style="width:80px" alt=""></td>
+                    <td>Mike</td>
+                    <td>Wazowsk</td>
+                    <td>mike.waz@gmail.com</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Editar" data-content="Para editar información de perfil, clic aquí!">
+                        <i class="glyphicon glyphicon-edit"></i></button>
+                        <a class="btn btn-success" href="VistaRegistroMike.html" target="_blank" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Ver" data-content="Para ver información del monstruo, clic aquí!">
+                        <i class="glyphicon glyphicon-eye-open"></i></a>
+                        <button type="button" class="btn btn-danger" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Mensaje" data-content="Para enviar un mensaje, clic aquí!">
+                        <i class="glyphicon glyphicon-envelope"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td><img src="sulley.png" style="width:60px" alt=""></td>
+                    <td>James P.</td>
+                    <td>Sullivan</td>
+                    <td>jamesp_sulley@hotmail.com</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Editar" data-content="Para editar información de perfil, clic aquí!">
+                        <i class="glyphicon glyphicon-edit"></i></button>
+                         <a class="btn btn-success" href="VistaRegistroSulley.html" target="_blank" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Ver" data-content="Para ver información del monstruo, clic aquí!">
+                        <i class="glyphicon glyphicon-eye-open"></i></a>
+                        <button type="button" class="btn btn-danger" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Mensaje" data-content="Para enviar un mensaje, clic aquí!">
+                        <i class="glyphicon glyphicon-envelope"></i></button></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td><img src="randall.png" style="width:70px" alt=""></td>
+                    <td>Randall</td>
+                    <td>Boggs</td>
+                    <td>randall_boggs@hotmail.com</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Editar" data-content="Para editar información de perfil, clic aquí!">
+                        <i class="glyphicon glyphicon-edit"></i></button>
+                         <a class="btn btn-success" href="VistaRegistroRandall.html" target="_blank"  data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Ver" data-content="Para ver información del monstruo, clic aquí!">
+                        <i class="glyphicon glyphicon-eye-open"></i></a>
+                        <button type="button" class="btn btn-danger" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Mensaje" data-content="Para enviar un mensaje, clic aquí!">
+                        <i class="glyphicon glyphicon-envelope"></i></button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><img src="Boo.png" style="width:40px" alt=""></td>
+                    <td>Boo</td>
+                    <td>Boo</td>
+                    <td>boo.boo@gmail.com</td>
+                    <td><button type="button" class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Editar" data-content="Para editar información de perfil, clic aquí!">
+                        <i class="glyphicon glyphicon-edit"></i></button>
+                        <button type="button" class="btn btn-success" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Ver" data-content="Para ver información del monstruo, clic aquí!">
+                        <i class="glyphicon glyphicon-eye-open"></i></button>
+                        <button type="button" class="btn btn-danger" data-toggle="popover" data-placement="bottom" data-trigger='hover' title="Mensaje" data-content="Para enviar un mensaje, clic aquí!">
+                        <i class="glyphicon glyphicon-envelope"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--Termina Tabla-->
+
+    <!---------------------------------Comienzan los scripts---------------------------------------------------------->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.dropdown-toggle').dropdown()
+        });
+
+        $(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+
+    </script>
+
+</body>
+
+</html>

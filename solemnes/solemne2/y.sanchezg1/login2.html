@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <style>
+            img{
+                display: block;
+                margin: auto;
+                height: 200px;
+            }
+            #derecho-autor{
+                color: #BDBDBD;
+            }
+            .boton-ingreso{
+                width: 370px;
+                background-color: #2E9AFE;
+                color: white
+            }
+            @media(max-width: 480px) {
+                img{
+                    height: 100px;
+                }
+                .boton-ingreso{
+                    margin-left: 25px;
+                }                
+            }
+            @media(min-width: 480px){
+                .centrar{
+                    margin-left: 400px;
+                }
+                .alineacion{
+                    text-align: center;
+                }
+                .separador{
+                    width: 400px;
+                }
+                .margen-1{
+                    margin-top: 70px;
+                }
+            }
+        </style>
+        <title>Monsters, Inc</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <img src="monsters-inc-508033ba7af03.png" alt=""/>
+            </div>
+            <div class="row">
+                <form class="form-horizontal" method="post" action="paginaprincipal.html">
+                      <div class="form-group">
+                          <div class="col-sm-4 centrar">
+                            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                          </div>
+                      </div>
+                  <div class="form-group">
+                    <div class="col-sm-4 centrar">
+                      <input type="password" class="form-control" placeholder="Contraseña" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-5 centrar">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Recordarme
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10 centrar">
+                      <button type="submit" class="btn boton-ingreso">Iniciar sesión en Monsters, Inc.</button>
+                    </div>
+                  </div>
+                   <a class="centrar">¿Olvidaste tú contraseña?</a><br>
+                   <a class="centrar" href="formulario.html">Registrate ahora</a>
+                </form>
+            </div>
+            <div class="row margen-1">
+                <hr class="separador">
+                <div class="col-sm-4 centrar">
+                    <a>Términos y condiciones</a><br>
+                    <a>Privacidad</a><br>
+                    <a>Derechos de Autor</a>
+                </div>
+            </div>
+            <div class="row" style="text-align: center">
+                <div class="col-sm-4 centrar">
+                    <p id="derecho-autor">2017 Monsters, Inc.</p>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>

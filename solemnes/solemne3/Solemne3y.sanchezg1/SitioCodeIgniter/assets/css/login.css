@@ -1,0 +1,39 @@
+img {
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+#derecho-autor {
+    color: #BDBDBD;
+}
+
+.boton-ingreso {
+    width: 370px;
+    background-color: #2E9AFE;
+    color: white
+}
+
+@media(max-width: 480px) {
+    img {
+        height: 100px;
+    }
+    .boton-ingreso {
+        margin-left: 25px;
+    }
+}
+
+@media(min-width: 480px) {
+    .centrar {
+        margin-left: 400px;
+    }
+    .alineacion {
+        text-align: center;
+    }
+    .separador {
+        width: 400px;
+    }
+    .margen-1 {
+        margin-top: 70px;
+    }
+}

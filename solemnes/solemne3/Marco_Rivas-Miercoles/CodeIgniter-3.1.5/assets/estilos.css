@@ -1,0 +1,43 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image:url("Lluvia.jpg");
+    background-size: cover;
+}
+.boxlogin{
+    margin: 75px auto;
+    width: 320px;
+}
+.form-horizontal{
+    background-color: lightgrey;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+input[value="Ingresar"]{
+    margin-top:20px;
+    margin-left:60px;
+    border-radius:15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+input[type="text"]{
+    border-radius:15px;
+    
+}
+input[type="password"]{
+    border-radius:15px;
+    
+}
+#logo{
+    width: 50%;
+    height: 30%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}

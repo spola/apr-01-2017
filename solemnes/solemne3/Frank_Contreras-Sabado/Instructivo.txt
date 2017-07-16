@@ -1,0 +1,8 @@
+Instrucciones para ejecutar el proyecto:
+
+1- Descomprimir la carpeta monsters en el directorio www de nuestro wamp
+2- Dentro de la carpeta monster hay un archivo llamado "monster.sql" ese archivo contiene las tablas de base de datos usadas para ejecutar el proyecto. Para importar rapidamente las tablas vamos a nuestro phpMyAdmin de wamp y creamos una nueva base de datos llamada "monster".
+3- Seleccionamos la base de datos creada y hacemos click en la opción que dice "importar"
+4- Seleccionamos el archivo "monster.sql" de la carpeta monster y le damos a aceptar
+5- Para ejecutar el proyecto abrimos nuestro navegador favorito y basta con escribir: "localhost/monster
+6- El nombre de usuario para ingresar al sistema es admin y la clave es 12345

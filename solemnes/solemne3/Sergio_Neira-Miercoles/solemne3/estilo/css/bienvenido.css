@@ -1,0 +1,12 @@
+body 
+{
+    background-image: url(../img/imagenDeFondoLogin.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html, body 
+{
+    height: 100%;
+    width: 100%;
+}

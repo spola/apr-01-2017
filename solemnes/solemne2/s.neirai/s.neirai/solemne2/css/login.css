@@ -1,0 +1,33 @@
+@media (max-width: 1300px)
+{
+    body 
+    {
+        background-image: url(/solemne2/img/imagenDeFondoLogin.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .login
+    {
+        background-color: rgba(125, 125, 125, 0.3);
+    }
+    .login p,
+    .login .form
+    {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    html, body 
+    {
+        height: 100%;
+        width: 100%;
+    }
+    body 
+    {
+        display: table;
+    }
+    .centro 
+    {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

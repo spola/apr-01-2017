@@ -1,0 +1,21 @@
+h2{
+    font-family: "Comic sans MS";
+}
+#imgfondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1
+}
+
+input {
+    font-family: "Comic sans MS";
+}
+
+label {
+    font-family: "Comic sans MS";
+}
+button{
+    font-family: "Comic sans MS";
+}

@@ -1,0 +1,24 @@
+.legendxd{
+    background-color:cornflowerblue;
+    width: auto;
+    border:solid black thin;
+    border-radius: 15px;
+    text-align: center;
+}
+.field{
+    background-color: cornflowerblue;
+    width: 400px;
+    height: 538px;
+    border: solid black thin;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+
+}
+.form-control{
+    resize: none;
+}
+.body{
+    width: auto;
+    height: 100%;
+}

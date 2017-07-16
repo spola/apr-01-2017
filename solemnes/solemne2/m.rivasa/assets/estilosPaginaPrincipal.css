@@ -1,0 +1,20 @@
+#nombreLogo{
+    color:white;
+    margin-top: 15px;
+    padding-right: 10px;
+}
+
+.jumbotron{
+    border-color: black;
+    text-align: center;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+input[type="text"]{
+    border-radius:15px;
+    
+}
+button[type="submit"]{
+    border-radius:15px;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>Monster Inc</title>
+    <meta name="description" content="Corporacion de energía especializada en sustos!" />
+    <link rel="shortcut icon" href="css/Imagenes/favicon.ico">
+    <link rel="stylesheet" href="css/estilo.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+    //NAVEGAR ENTRE LOGIN
+    function registrar() {
+    document.getElementById("registrar").style.display="block";
+    document.getElementById("login").style.display="none";
+    document.getElementById("registrado").style.display="none";
+    }
+    function login() {
+    document.getElementById("login").style.display="block";
+    document.getElementById("registrar").style.display="none";
+    document.getElementById("registrado").style.display="none";
+    }
+    function registrado() {
+    document.getElementById("registrar").style.display="none";
+    document.getElementById("login").style.display="none";
+    document.getElementById("registrado").style.display="block";   
+    }
+    function homePage() {
+    window.location = ("home.html");
+    }
+    </script>
+
+    <script>
+ function Validar(email,pwd)
+  {
+   email=document.getElementById(email);
+   pwd=document.getElementById(pwd);
+   if(user.value==" ")
+    {
+     alert("El campo Email esta vacio");
+     user.focus();
+     return false;
+    }
+   else
+    {
+     if(pwd.value==" ")
+      {
+       alert("El campo Password esta vacio");
+       pwd.focus();
+       return false;
+      }
+     else
+      { 
+          return true;
+      }
+    }
+  }
+</script>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Monster Inc</h1>
+    </div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div id="login">
+          <h2>Iniciar Sesión</h2>
+                <form action="home.html">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Introducir Email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Contraseña:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Introducir Contraseña" name="pwd" required>
+        </div>
+        <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Recordar</label>
+        </div>
+        <input type="submit" class="btn btn-primary btn-block" name="Entrar" value="Entrar"></form>
+        <p>No tiene cuenta aún? <a onClick="registrar()">Registrar</a></p>
+        </div>
+        <div id="registrar">
+            <h2>Registrarse</h2>
+        <div class="form-group">
+            <label for="name">Nombre Usuario:</label>
+            <input type="text"  class="form-control" id="name" placeholder="Introduzca Nombre de usuario" name="Nombre Usuario"></div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Introduzca Email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Contraseña:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Introduzca Contraseña" name="pwd" required>
+            </div>
+        <div class="form-group">
+            <label for="pwd">Fecha de Nacimiento:</label>
+            <input type="date" class="form-control" id="fecnac" name="fecnac" required>
+            </div>
+            <div class="checkbox">
+            <label><input type="checkbox" id="suscribir"  name="subscribir" required>Desea Subscribirse?</label>
+            
+        </div>
+        <center><button type="submit" class="btn btn-primary btn-block" onclick="registrado()">Registrarse</button>
+            <p>Tiene cuenta? <a onClick="login()">Inicie sesión</a></p>
+        </center>    
+        </div>    
+            <div id="registrado">
+                <center><h3>En hora buena</h3>
+                <h4>se le ha enviado un correo de activación, verifique por favor</h4>
+                <p>Si gusta puede <a onClick="login()">Volver a inicio</a></p>
+                <p>Algo salio mal? <a onClick="registrar()">Volver a registrar</a></p></center>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+    
+    
+</div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+body {
+    background-image: url(../img/Monsters_inc.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.centro {
+    margin: 5px;
+    display: table-cell;
+    vertical-align:middle;
+   
+}
+table{
+                border-collapse: separate;
+                border-spacing: 10px;
+                background-color: rgba(50, 50, 50, 0.3);
+                font-weight: 700;
+     }
+#opcion{
+            color: white;
+        }

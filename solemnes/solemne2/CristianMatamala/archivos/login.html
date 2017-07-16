@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Login de monster inc</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+
+    
+    <style>
+        body
+            {
+                background: url('http://www.colores.org.es/imagenes_colores/azul-cielo.jpg') fixed;
+                background-size: cover;
+                padding: 0;
+                margin: 0;
+            }
+    </style>
+</head>
+    
+    <body>
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+    <div class="container">
+        <div class="row">
+            
+            <img id="profile-img" class="center-block" src="https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=117804496" />
+            <p id="profile-name" class="profile-name-card"></p>
+            <form class="form-signin" action="recepcionDeUsuario.html">
+                <span id="reauth-email" class="reauth-email"></span>
+                
+                <input type="email" id="inputEmail" class="form-control" placeholder="email del monstruo" name="usuario" required autofocus>
+                
+                <input type="password" id="inputPassword" class="form-control" placeholder="contraseña" name="clave" required>
+                
+                 <div class="wrapper">
+                    <span class="group-btn  col-lg-5">     
+                        <button class="btn btn-lg btn-primary btn-block btn-signin" action="recepcionDeUsuario.html" type="submit">Iniciar sesión</button>
+                    </span>
+                     <span class="group-btn col-lg-5">
+                        <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" action="login.html">Registrarse
+                         </button>
+                    </span>
+                     
+                    
+                </div>
+            </form>
+           
+        </div>
+    </div>
+        
+</body>
+</html>

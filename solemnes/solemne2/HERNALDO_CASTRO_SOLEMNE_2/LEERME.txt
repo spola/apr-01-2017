@@ -1,0 +1,9 @@
+Estimado Profesor
+Mi pagina esta basada en un proyecto que deseo implementar
+Pagina de compra, venta Y permuta de productos a nivel sede Santotomas
+-Loggin y usuario caulquiera
+-Una ves en el menu de inicio  en el menu Usuario se accede a vender
+-Aparecera formulario de ingreso de venta
+-Una vez ingresada la venta volvera al menu
+-Para visualizar el ingreso de la venta se accede a mis publicaciones en el menu principal
+y para abandonar la pagina esta logout tambien en el menu principal

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Ingreso de empleados</title>
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/ingresoRegistro.css">
+    </head>
+    <body class="container">
+        <div class="row">
+            <div class="col-xs-offset-2 col-xs-8">
+                <div class="row">
+                    <div class="col-xs-offset-3 col-xs-8">
+                        <h1>Registro de empleados</h1>
+                    </div>
+                </div>
+                <div class="row registroEmpleados">
+                    <div class="col-xs-12">
+                        <form class="form-horizontal" method="post" action="recepcionIngresoRegistro.php">
+                            <div class="form-group">
+                                <label for="nombreEmpleadoId" class="col-xs-2">Nombre:</label>
+                                <div class="col-xs-10">
+                                    <input type="text" class="form-control" id="nombreEmpleadoId" name="nombreEmpleado" placeholder="Ingrese su nombre (campo requerido)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidoEmpleadoId" class="col-xs-2">Apellido:</label>
+                                <div class="col-xs-10">
+                                    <input type="text" class="form-control" id="apellidoEmpleadoId" name="apellidoEmpleado" placeholder="Ingrese su apellido (campo requerido)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="cargoUnoId" class="col-xs-2">Cargos:</label>
+                                <div class="col-xs-10">
+                                    <input type="text" class="form-control" id="cargoUnoId" name="cargoUno" placeholder="(campo requerido)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-offset-2 col-xs-10">
+                                    <input type="text" class="form-control" id="cargoDosId" name="cargoDos" placeholder="Si no tiene un segundo cargo, debe dejar en blanco este campo ">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="emailId" class="col-xs-2">Email:</label>
+                                <div class="col-xs-10">
+                                    <input type="email" class="form-control" id="emailId" name="email" placeholder="(campo requerido)">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-offset-2 col-xs-10">
+                                    <button type="submit" class="btn btn-info" id="submitId">Registrar</button>
+                                    <button type="button" class="btn btn-danger" onclick="logout()"><a href="login.html">Salir</a></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script>
+            var url = "http://localhost/solemne2/login.html";
+            function logout()
+            {
+                window.location = url;
+            }
+        </script>
+        <script>
+        $(function(){
+            $("#submitId").on("click", function(e){
+                var nombreEmpleadoId = $("#nombreEmpleadoId").val();
+                var apellidoEmpleadoId = $("#apellidoEmpleadoId").val();
+                var cargoUnoId = $("#cargoUnoId").val();
+                var emailId = $("#emailId").val();
+                if((nombreEmpleadoId == "") || (apellidoEmpleadoId == "") || (cargoUnoId == "") || (emailId == ""))
+                {
+                    e.preventDefault();
+                    alert("Uno de los campos requeridos está vacío.");
+                }
+            }
+         );
+        })
+    </script>
+    </body>
+</html>

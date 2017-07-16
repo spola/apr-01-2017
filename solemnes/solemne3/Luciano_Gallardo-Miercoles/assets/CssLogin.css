@@ -1,0 +1,160 @@
+  body {
+    background: url(FondoLogin.jpg) fixed;
+    background-size: cover;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  }
+
+  .form-signin {
+    max-width: 280px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top:50px;
+  }
+ .form-signin-registro {
+    max-width:280px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top:-50px;
+  }
+  .form-signin .form-signin-heading, .form-signin {
+    margin-bottom: 10px;
+    font-family: calibri;
+  }
+  .form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .form-signin .form-control {
+    z-index: 2;
+  }
+  .form-signin input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-style: none;
+    border-left-style: solid;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top:1px solid rgba(0,0,0,0.08);
+  }
+  .form-signin-heading {
+    margin-top: -20px;
+    color: #44A1DF;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0,0,0,0.5);
+ }
+ .form-signin-heading:hover{
+    color: #ffff;
+}
+.btn{
+    color: #A1C6DF;
+    border-radius:10px 10px 10px 10px;
+    background: rgba(50,50,50, 0.4);
+    padding: 2px 30px ;
+    border: 2px solid #A1C6DF;
+    font-family: calibri; 
+    margin:10px auto;
+    font-weight: bold;
+}
+.btn:hover{
+    background: #44A1DF;
+    color: white;
+}
+.checkbox:hover{
+  color: #44A1DF 
+}
+.pr-wrap
+{
+
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    display: none;
+}
+.show-pass-reset
+{
+    font-family: calibri;
+    display: block !important;
+}
+
+.pass-reset
+{
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin-top: 22%;
+    z-index: 999;
+    background: #FFFFFF;
+    padding: 20px 15px;
+}
+
+.pass-reset label
+{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.pass-reset input[type="email"]
+{
+    width: 100%;
+    margin: 5px 0 0 0;
+    padding: 5px 10px;
+    background: 0;
+    border: 0;
+    border-bottom: 1px solid #000000;
+    outline: 0;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: #000000;
+    outline: 0;
+}
+
+.pass-reset input[type="submit"]
+{
+    width: 100%;
+    border: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 10px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.pass-reset input[type="submit"]:hover
+{
+    transition: background-color 0.5s ease;
+}
+.posted-by
+{
+    position: absolute;
+    bottom: 26px;
+    margin: 0 auto;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.66);
+    padding: 10px;
+    left: 100%;
+}
+

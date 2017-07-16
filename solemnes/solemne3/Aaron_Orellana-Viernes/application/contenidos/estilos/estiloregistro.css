@@ -1,0 +1,12 @@
+body
+{
+    background: url("cielo.jpg");
+}
+.panel-body
+{
+    background-color: #33CEFF;
+}
+
+div label {
+  float: left;
+}

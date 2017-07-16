@@ -1,0 +1,31 @@
+body {  
+    background: url(registarrfoto.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #eee;
+    padding-top:80px;
+}
+.form-horizontal {
+    max-width: 440px;
+    margin:  auto;
+    border-radius: 10px;
+}
+.form-horizontal .form-group {
+    max-width: 400px;
+    margin:  auto;
+}
+.btn{
+    color: #FFFFFF;
+    border-radius:10px 10px 10px 10px;
+    background: rgba(50,50,50, 0.4);
+    border: 2px solid #FFFFFF;
+}
+.btn:hover{
+    background: #44A1DF;
+    color: white;
+    border: 2px solid #FFFFFF;
+}
+.form-group .boton{
+    margin:  auto;
+} 

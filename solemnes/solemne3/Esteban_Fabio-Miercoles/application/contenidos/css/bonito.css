@@ -1,0 +1,30 @@
+body {
+    background: url('http://www.solofondos.com/wp-content/uploads/2015/11/new-fondo1lateral.jpg');
+    padding-top: 60px;
+}
+
+h2 {
+    color: antiquewhite;
+}
+
+.ingresar {
+    background-color: aquamarine;
+    color: black;
+}
+
+.salir {
+    background-color: aquamarine;
+    color: cornflowerblue;
+}
+
+thead {
+    color: white;
+}
+
+tbody {
+    color: white;
+}
+
+img {
+    border-radius: 50%;
+}

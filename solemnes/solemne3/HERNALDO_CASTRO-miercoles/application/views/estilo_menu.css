@@ -1,0 +1,16 @@
+{margin:0px;
+padding:0px;    
+}
+
+body{
+background-image: url(monster1.jpg);
+    background-position: center center;
+}
+.row{
+  
+    font-variant-position: left;
+    color: whitesmoke;  
+    font-size: 28;}
+#uno{
+  background-image: url(productos.png);  
+}

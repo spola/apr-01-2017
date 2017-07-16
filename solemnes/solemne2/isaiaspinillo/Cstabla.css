@@ -1,0 +1,25 @@
+
+body {  
+    background: url(tabla.jpg) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #eee;
+    background-position: center;
+    padding-top:80px;
+}
+.btn{
+    color: #0B0808;
+    border-radius:10px 10px 10px 10px;
+    background: rgba(50,50,50, 0.4);
+    border: 2px solid #0B0808;
+}
+.btn:hover{
+    background: #44A1DF;
+    color: white;
+}
+.contenedor{
+    
+}
+
+    

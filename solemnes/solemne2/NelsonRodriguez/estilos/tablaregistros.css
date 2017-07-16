@@ -1,0 +1,14 @@
+table{
+    border:30px color: black;
+    width: 80%;
+    
+    
+}
+td{
+    background-color:darkgray ; 
+    margin: 4px;
+    border: 3px color: black;
+    padding: 6px;
+    
+}
+

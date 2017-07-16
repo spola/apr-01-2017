@@ -1,0 +1,27 @@
+.redondeo {
+    border-radius: 60px;
+}
+
+body {
+    background-image: url(fondo.jpg);
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(245, 245, 245, 0.6);
+    color: black;
+    border-radius: 40px;
+}
+
+.tamano {
+    width: 500px;
+}
+
+@media(min-width: 500px) {
+    thead {
+        font-size: 25px;
+    }
+    tbody {
+        font-size: 15px;
+    }
+}

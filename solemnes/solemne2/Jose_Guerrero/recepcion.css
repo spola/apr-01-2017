@@ -1,0 +1,36 @@
+#imgFondo {
+    width: 300px;
+    height: 250px;
+}
+
+.Estilo1 {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+body,
+td,
+th {
+    font-family: "Comic sans MS";
+    font-size: 12px;
+}
+
+input:hover {
+    background-color: #FFFF99;
+}
+
+input {
+    border-radius: 15px;
+    background-color: #D7D7FF;
+    text-transform: uppercase;
+    font-family: "Comic sans MS";
+}
+select
+{
+    border-radius: 15px;
+}
+#table 
+{
+     width:393px;
+     border:0;
+}

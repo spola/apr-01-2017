@@ -1,0 +1,63 @@
+.separacion-letras-contenido {
+    margin-bottom: 10px;
+}
+
+.letra-contenido {
+    font-size: 20px;
+}
+
+.redondeo {
+    border-radius: 60px;
+}
+
+.separador {
+    width: 1100px
+}
+
+body {
+    background-image: url('/assets/img/fondo.jpg');
+    background-size: cover;
+}
+
+.titulos-rectangulos {
+    font-size: 25px;
+}
+
+.margen-arriba {
+    margin-top: 20px;
+}
+
+.foto-perfil {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 60px;
+}
+
+.container {
+    background-color: rgba(245, 245, 245, 0.6);
+    color: black;
+    border-radius: 40px;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.color-letra {
+    color: #424242;
+}
+
+.tamano {
+    width: 500px;
+}
+
+@media(min-width: 300px) and (max-width: 500px) {
+    .foto-perfil {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .separador {
+        width: 400px
+    }
+}

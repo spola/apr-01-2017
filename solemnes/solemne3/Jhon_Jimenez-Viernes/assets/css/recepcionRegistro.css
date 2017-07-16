@@ -1,0 +1,8 @@
+body{
+    background-image: url(../img/mons.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+table{
+    background-color: white;
+}

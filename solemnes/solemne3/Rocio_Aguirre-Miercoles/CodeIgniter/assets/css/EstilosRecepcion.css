@@ -1,0 +1,19 @@
+img {
+    width: 70px;
+    height: 70px;
+}
+
+body {
+    padding-top: 150px;
+    padding-left: 80px;
+    padding-right: 50px;
+    background-image: url("http://www.chinaeholiday.com/data/out/31/4963297-mike-wallpapers.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    border-radius: 15px;
+    background-color: rgba(245, 245, 245, 0.7);
+    border-color: #3C9DD5;
+}

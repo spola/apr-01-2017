@@ -1,0 +1,38 @@
+body {
+    background-image: url(../img/AbominableHombreDeLasNieves.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-signin {
+    max-width: 400px;
+    padding: 30px;
+    margin:  auto;
+    background-color: rgba(50,55,50,0.8);
+}
+
+.pass-reset {
+    font-size: 32px;
+    padding: 30px;
+    max-width: 400px;
+    margin:  auto;
+}
+.row label{
+    color: #ffffff;
+}
+
+
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: table;
+}
+.centro {
+    display: table-cell;
+    vertical-align: middle;
+    
+}

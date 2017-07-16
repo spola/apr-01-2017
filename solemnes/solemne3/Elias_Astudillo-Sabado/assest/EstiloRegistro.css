@@ -1,0 +1,33 @@
+.RegistroCuenta {
+  padding: 30px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.RegistroCuenta h1 {
+  text-align: center;
+  font-size: 1.8em;
+  color:white
+}
+.RegistroCuenta input[type=submit] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.RegistroCuenta input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #d9d9d9;
+  padding: 0 8px;
+}
+
+.registrar {
+  border: 0px;
+  background-color: greenyellow;
+  padding: 17px 0px;
+  color:white
+}
+body{
+    background:url('http://wallpapersdsc.net/wp-content/uploads/2016/09/Monsters-Inc.-Images.jpg');
+    padding:70px;
+}

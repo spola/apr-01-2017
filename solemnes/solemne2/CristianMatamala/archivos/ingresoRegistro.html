@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro de monstruos</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="archivos/detalles.css">    
+    
+        <style>
+            body
+            {
+                background: url('http://vignette3.wikia.nocookie.net/pixar/images/0/05/Screen_shot_2012-12-22_at_8.36.46_PM.png/revision/latest?cb=20130805215701') fixed;
+                background-size: cover;
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <form>
+            
+        <div class="container" style="margin-top:50px">
+            <div class="row">
+            <div class="col-sm-11 col-md-6 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><strong>Registro para los Monstruos</strong>
+                    </div>
+                    
+                    <div class="panel-body">
+                        <form class="form-horizontal" action="vistaDeRegistros.html">
+                            
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-5 control-label">RUT:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="inputPassword3" name="rut" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-5 control-label">Nombres:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="inputPassword3" name="nombres" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-5 control-label">Apellidos:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="inputPassword3" name="apellidos" required>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-5 control-label">Sexo:</label>
+                                <div class="col-sm-5">
+                                    <select class="form-control">
+                                      <option value="hombre">Masculino</option>
+                                      <option value="mujer">Femenino</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-5 control-label">Descripción:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="inputPassword3" name="descripcion" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="col-sm-offset-5 col-sm-5">
+                                    <button type="submit" class="btn btn-warning">Registrarse</button>
+                                </div>
+                            </div>
+                            
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </form>
+        
+        <center>
+            <div class="form-group">
+                <div class="col-sm-offset-5 col-sm-2">
+            <div class="wrapper">
+                    <a class="btn btn-success" href="vistaDeRegistros.html" role="button">Mostrar registros existentes</a> 
+                    </div>
+            </div>
+            </div>
+        </center>
+        
+        <center>
+            <div class="form-group">
+                <div class="col-sm-offset-5 col-sm-2">
+            <div class="wrapper">
+                    <a class="btn btn-danger" href="login.html" role="button">Salir del registro</a> 
+                    </div>
+            </div>
+            </div>
+        </center>
+        
+        
+        
+    </body>
+</html>

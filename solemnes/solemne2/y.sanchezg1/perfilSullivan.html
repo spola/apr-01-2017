@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">      
+        
+        <style>
+            .separacion-letras-contenido{
+                margin-bottom: 10px;
+            }
+            .letra-contenido{
+                font-size: 20px;
+            }
+            .redondeo{
+                border-radius: 60px;
+            }
+            .separador{
+                width: 1100px
+            }
+            body{
+                background-image: url(fondo.jpg);
+                background-size: cover;
+            }
+            .titulos-rectangulos{
+                font-size: 25px;
+            }
+            .margen-arriba{
+                margin-top: 20px;
+            }
+            .foto-perfil{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-radius: 60px;
+            }
+            .container{
+                background-color: rgba(245, 245, 245, 0.6);
+                color: black;
+                border-radius: 40px;
+            }
+            .centrar-texto{
+                text-align: center;
+            }
+            .color-letra{
+                color:#424242;
+            }
+            .tamano{
+                width: 500px;
+            }
+            @media(min-width: 300px) and (max-width: 500px){
+                .foto-perfil{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                
+                .separador{
+                    width: 400px
+                }
+            }
+            
+        </style>
+        <title>Perfil James Sullivan</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="paginaprincipal.html">
+                        <img src="logoBrand.png" style="height: 20px" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="paginaprincipal.html">Página principal</a></li>
+                        <li class="active"><a>Perfil James P. Sullivan</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Buscar">
+                        </div>
+                        <button type="submit" class="btn btn-default">Buscar</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="login2.html">Iniciar sesión</a></li>
+                        <li><a href="formulario.html">Registrate</a></li>
+                        <li><img src="mike.jpg" class="redondeo" style="height: 50px" alt=""></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mike Wazowski <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Ver perfil</a></li>
+                                <li><a href="#">Tareas</a></li>
+                                <li ><a href="#">Configuración de privacidad</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="login2.html">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 centrar-texto">
+                    <img src="James-p-sulley-sullivan.png" class="foto-perfil" alt="" style="height: 120px"><br>
+                    <h1>James P. Sullivan</h1>
+                    <h4>Anteriormente trabajador de la empresa Monsters, Inc., ahora co-propietario junto con Sulley de la dicha empresa.</h4>
+                    <h4 class="color-letra">Monsters University</h4>
+                    <a class="btn btn-info" href="#" role="button" style="margin-bottom: 10px;">Enviar un mensaje</a>
+                </div>
+            </div>
+        </div>
+        <div class="container margen-arriba">
+            <div class="row centrar-texto">
+                <span class="glyphicon glyphicon-user titulos-rectangulos" style="margin-top: 10px"></span>
+                <span class="titulos-rectangulos"><b>Información personal</b></span>
+                <hr class="separador">
+            </div>
+            <div class="row letra-contenido" style="margin-left: 20px">
+                <div class="col-md-3">
+                    <span>Edad: 30 años</span>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <span>Nacionalidad: Alemán</span>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <span>Sexo: Masculino</span>
+                </div>
+            </div>
+            <hr class="separador">
+            <div class="row letra-contenido separacion-letras-contenido" style="margin-left: 20px;">
+                <div class="col-md-3">
+                    <span>Email: james.sullivan@gmail.com</span>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <span>Teléfono: +52 1 449-728-3</span>
+                </div>                
+                <div class="col-md-3 col-md-offset-1">
+                    <span>Celular: +52 1 449-333-3</span>
+                </div>
+            </div>
+        </div>
+        <div class="container margen-arriba">
+            <div class="row centrar-texto">
+                <span class="glyphicon glyphicon-user titulos-rectangulos" style="margin-top: 10px"></span>
+                <span class="titulos-rectangulos"><b>Información adicional</b></span>
+                <hr class="separador">
+            </div>
+            <div class="row letra-contenido separacion-letras-contenido" style="margin-left: 20px">
+                <div class="col-md-10 col-md-offset-1">
+                    <span>
+                        Es el mejor amigo de Sulley, su ayudante en Monsters, Inc., la fábrica de sustos, que posteriormente transforma los gritos de los niños en energía. Mike Wazowski tiene un carácter muy enérgico y bastante alocado, es muy carismático bastante chistoso, y algo enojón, seguro de sí mismo y con gran autoestima, hace lo que quiere en el momento que quiere, pero también es un romántico empedernido que pierde la cabeza  por Celia, la recepcionista de la empresa. Aunque a menudo discute con Sulley, se siente orgulloso de él y le apoya cuando las cosas se ponen feas. De pequeño, todos lo ignoraban, pero nada le impidió perseguir sus sueños y llegar a estudiar en Monsters University para ser asustador.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('.dropdown-toggle').dropdown()
+            });
+            $('[data-toggle="popover"]').popover();
+        </script>
+    </body>
+</html>
